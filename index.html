@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etch a Sketch</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="./main.js"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Erica+One&display=swap" rel="stylesheet">    
 <body>
     <h1>Etch a Sketch</h1>
-    <div class="header">
-        <h6>Select the size</h6>
-        <button id="popup" class="selectButton">Select</button>
+    <div class="buttons">
+        <button id="select">Select Grid Size</button>
+        <button class="black" onclick="setColor('black')">Black</button>
+        <button class="rgb" onclick ="setColor('random')">RGB</button>
+        <button class="reset" onclick="reset()">Reset</button>
     </div>
-    <div class="container">
-    </div>
-    <div class="footer">
-        <button class="blackButton">Black</button>
-        <button class="randomButton">Random</button>
-        <button class="resetButton">Reset</button>
-    </div>
+    <p id="msg"></p>
+    <div class="container"></div>
+    <script src="main.js"></script>
 </body>
 </html>

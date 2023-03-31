@@ -1,19 +1,23 @@
+
 body {
+    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
 }
 
-h1,
-h6 {
-    font-family: 'Kanit', sans-serif;
+.buttons {
+    background-image: linear-gradient(135.9deg, rgb(109, 25, 252) 16.4%, rgb(125, 31, 165) 56.1%);
+    gap: 5px;
 }
 
-.blackButton,
-.resetButton, 
-.randomButton,
-.selectButton { 
+#select,
+.black,
+.rgb,
+.reset {
     display: inline-block;
     outline: 0;
     border: 0;
@@ -24,32 +28,34 @@ h6 {
     font-size: 16px;
     font-weight: 600;
     color: #2d3748;
-    border: 1px solid #cbd5e0;
+    border: 1px solid black;
     line-height: 26px;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-    margin-top: 50px;
+h1 {
+    font-family: 'Erica One';
+    color: white;
+    font-size: 50px;
+    text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989993px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756803px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279416px 0px;
 }
 
 .container {
+    display: grid;
     width: 500px;
     height: 500px;
-    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
     border: 1px solid black;
 }
 
-h6 {
-    font-size: 13px;
+#msg {
+    font-family: 'Erica One';
+    color: white;
+    font-size: 20px;
+}
+
+.grid-item {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
 }
